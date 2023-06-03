@@ -20,7 +20,7 @@ def clear_submit():
     st.session_state["submit"] = False
 
 
-st.header("📖Volume One Building Code of Australia")
+st.header("📖Volume Two: Building Code of Australia")
 
 sidebar()
 st.session_state["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
