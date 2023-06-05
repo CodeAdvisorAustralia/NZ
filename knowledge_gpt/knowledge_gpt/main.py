@@ -99,15 +99,3 @@ if button or st.session_state.get("submit"):
 
             
             
-html_string='''
-<script>
-// To break out of iframe and access the parent window
-const streamlitDoc = window.parent.document;
-
-// Make the replacement
-document.addEventListener("DOMContentLoaded", function(event){
-        streamlitDoc.getElementsByTagName("footer")[0].innerHTML = "Provided by Shuja' target='_blank' class='css-z3au9t egzxvld2'>Your Link Display Text Here</a>";
-    });
-</script>
-'''
-components.html(html_string)
