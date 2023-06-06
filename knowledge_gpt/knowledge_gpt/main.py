@@ -20,7 +20,7 @@ def clear_submit():
     st.session_state["submit"] = False
 
 
-st.header("📖Volume Three: Building Code of Australia")
+st.header("📖 Building Code of New-Zealand")
 
 sidebar()
 st.session_state["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
@@ -31,7 +31,7 @@ def process_file(file_path):
         uploaded_file = BytesIO(file.read())
     return uploaded_file
 
-uploaded_file =  process_file('knowledge_gpt/knowledge_gpt/VOL - 3.pdf')
+uploaded_file =  process_file('knowledge_gpt/knowledge_gpt/all_compressed_removed_removed.pdf')
 
 index = None
 doc = None
